@@ -1,20 +1,16 @@
 # Security Hardening of a Windows OS
 A project walkthrough of a complete vulnerability management program that I designed for a medium sized business
 
-In this project, we simulate the implementation of a comprehensive vulnerability management program, from inception to completion.
-
-_**Inception State:**_ the organization has no existing policy or vulnerability management practices in place.
-
-_**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secured, and a full cycle of organization-wide vulnerability remediation is successfully completed.
+In this project, I demonstrate a complete Windows OS security hardening cycle involving a vulnerability scan with Tenable/Nessus (DISA STIG), programmatic patching of vulnerabilities, and manual review of all OS configurations.
 
 ---
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/cfc5dbcf-3fcb-4a71-9c13-2a49f8bab3e6">
-
 # Technology Utilized
 - Tenable (enterprise vulnerability management platform)
+- DISA STIG standards
 - Azure Virtual Machines (Nessus scan engine + scan targets)
-- PowerShell & BASH (remediation scripts)
+- PowerShell (remediation scripts)
+- Windows services, ports and Microsoft Defender
 
 ---
 
@@ -38,10 +34,16 @@ _**Completion State:**_ a formal policy is enacted, stakeholder buy-in is secure
 
 ---
 
-### Vulnerability Management Policy Draft Creation
+### The Vulnerability Scan
 
-This phase focuses on drafting a Vulnerability Management Policy as a starting point for stakeholder engagement. The initial draft outlines scope, responsibilities, and remediation timelines, and may be adjusted based on feedback from relevant departments to ensure practical implementation before final approval by upper management.  
-[Draft Policy](https://docs.google.com/document/d/1CLSWm1_9JL1oUqgyNNwtPXW6FzXJ7ddVnSAUQTyqC8I/edit?usp=drive_link)
+I begin by setting up my Tenable scan template that checks for DISA STIG vulnerabilities on my Azure virtual machine (10.0.0.236):
+
+![image](https://github.com/user-attachments/assets/3e40d54d-e342-4956-be02-9f845e7a02c6)
+
+
+
+
+
 
 ---
 
